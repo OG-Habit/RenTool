@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.top {
+    background: url("../img/homepage-main.jpg");
+    background-size: contain;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top__h1 {
+    margin: 0;
+    font-size: 4em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 0.3em;
+}
+
+.top__search-bar {
+    margin-top: 2em;
+    background-color: white;    
+    border-radius: 1.5em;
+    border: rgb(0, 0, 0) 2px solid;
+    background-image: url("../img/search-button.png");
+    background-size: 25px;
+    background-position: 5%;
+    background-repeat: no-repeat;
+    padding: 0.75em;
+    padding-left: 3em;
+    width: 400px;
+}
+
+.top__search-bar[placeholder] {
+    font-size: 1.1em;
+}
+
+.top__search-bar:focus {
+    outline: none;
+    border-color: rgb(82, 216, 93);
+}
+
+/* FEATURES */
+
+.features {
+    margin: 50px 0;
+}
+
+.features-block {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 50px auto; 
+    width: 90%;
+}
+
+.features__title {
+    text-align: center;
+    font-size: 1.8em;
+    color: rgb(43, 111, 156)
+}
+
+.features__feature {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    text-align: center;
+    margin: 0 0 30px;
+}
+
+.features__feature img {
+    width: 250px;
+}
+
+.features__feature h2 {
+    margin: 5px 0;
+}
+
+.features__feature p {
+    margin: 0 ;
+    font-size: 0.9em;
+}
+
+/* STEPS */
+
+.steps {
+    margin: 50px 0;
+}
+
+.steps__title {
+    text-align: center;
+    font-size: 1.8em;
+    color: rgb(43, 111, 156);
+    margin-bottom: 20px;
+}
+
+.steps-block {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.steps-block__step {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(90, 92, 90);
+    width: 630px;
+    height: 100px;
+    border-radius: 2.15em;
+    margin-bottom: 20px;
+}
+
+.steps-block__step img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.steps-block__step p{
+    margin: 0;
+    text-align: justify;
+    color: white;
+}
